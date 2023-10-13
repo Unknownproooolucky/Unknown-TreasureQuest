@@ -10,8 +10,9 @@ _G.loops = true
 while wait(1) do
 if _G.loops == true then
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+wait(3)
 print("Anti Cheat Reset the Speed")
-print("Re executing...)
+print("Re executing...")
 end
 end
 end)
