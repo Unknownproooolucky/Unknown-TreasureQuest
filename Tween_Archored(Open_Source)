@@ -1,0 +1,11 @@
+-- Tween Archored
+
+local Chr = game.Players.LocalPlayer.Character
+local Hrt = Chr:WaitForChild("HumanoidRootPart")
+
+function tweenarchor() -- u can remove it also the end function
+BVT = Instance.new("BodyVelocity")
+BVT.Name = "Tween_Anchor"
+BVT.Velocity = Vector3.new(0, 0, 0)
+BVT.Parent = Hrt
+end
