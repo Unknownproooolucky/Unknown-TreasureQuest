@@ -1,0 +1,7 @@
+-- Do not execute it, U will get Ban for 7-30 days
+-- Unknown TQ Hub V4 Source
+-- Test (Attempt 1)
+
+local args = {}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Shared"):WaitForChild("Remotes"):WaitForChild("Data"):WaitForChild("EquipEmblem"):FireServer(unpack(args))
