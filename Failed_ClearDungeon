@@ -1,0 +1,19 @@
+-- Patched by ServerSide Script
+-- Clear Dungeon Script
+
+local die = 0 -- doesn't work 
+
+_G.KillAura = true
+
+while _G.KillAura do
+    wait()
+
+    for _, monster in pairs(game.Workspace.Dungeon.Enemies:GetDescendants()) do
+        local humanoid = monster:FindFirstChildOfClass("Humanoid")
+
+        if humanoid then
+            humanoid.Health = die
+            humanoid:ChangeState(15)
+        end
+    end
+end
