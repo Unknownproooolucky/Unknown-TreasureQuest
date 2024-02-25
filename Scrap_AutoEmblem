@@ -1,0 +1,13 @@
+-- Status: Bannable
+
+-- Generate Number from 1 to 10000000000
+for i = 1, 10000000000 do
+
+    local args = {
+        [1] = tostring(i) .. "-" .. tostring(i) -- error fire
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Shared"):WaitForChild("Remotes"):WaitForChild("Data"):WaitForChild("EquipEmblem"):FireServer(args)
+        
+    wait(0.1)
+end
