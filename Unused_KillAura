@@ -1,0 +1,17 @@
+-- Patched by Nearest Character Distance Enemies
+local WeaponName = "Wooden Sword"
+XHit = 500
+YHit = 500
+ZHit = 500
+
+local gmt = getrawmetatable(game)
+local nidx = gmt.__newindex
+setreadonly(gmt, false)
+gmt.__newindex = function(t, i, v)
+ if t.ClassName == "FighterVisuals" and i == WeaponName then
+   return
+ end
+ return nidx(t, i, v)
+end
+  
+game.Players.LocalPlayer.Character.FighterVisuals[WeaponName].Hitbox.Size = Vector3.new(XHit,YHit,ZHit)
