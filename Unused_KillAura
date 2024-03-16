@@ -1,4 +1,4 @@
--- Patched by Nearest Character Distance Enemies
+-- Patched from Removed Touchinterest in file
 local WeaponName = "Wooden Sword"
 XHit = 500
 YHit = 500
