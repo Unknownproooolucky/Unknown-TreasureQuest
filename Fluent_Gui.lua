@@ -7,5 +7,5 @@ Duration = 10;
 
 wait(13)
 
-game.Players.LocalPlayer:Kick("Unexpected Client Behavior: Invalid Type [Loadstring] [raw.githubusercontent.com] (Error Code: 267)")
+game.Players.LocalPlayer:Kick("Unexpected Client Behavior: Invalid Type [Loadstring] [raw.githubusercontent.com]")
 -- Early April Fools XD 
